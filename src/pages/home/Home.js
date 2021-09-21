@@ -5,6 +5,8 @@ import NotesList from '../../components/notes/notesList'
 import { useSelector } from "react-redux";
 import { useFirestoreConnect } from "react-redux-firebase";
 
+//css
+import "./home.css"
 
 const Home = () => {
     useFirestoreConnect([{ collection: 'notes', orderBy: ['createdAt', 'desc'] }])
